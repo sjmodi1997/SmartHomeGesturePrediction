@@ -8,6 +8,7 @@ from scipy import spatial
 model = HandShapeFeatureExtractor.get_instance()
 
 
+# Get the feature array feature vector for all the videos in the path
 def generate_penultimate_layer(input_path_name):
     videos = []
     for fileName in os.listdir(input_path_name):
